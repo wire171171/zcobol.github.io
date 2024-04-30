@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z/COBOL™ Version 2.1.0</title>
+    <meta name="description" content="z/COBOL™ Version 2.1.0 is a modernized COBOL compiler designed to optimize the outright power of the latest IBM z Series mainframe.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0073b1;
+            --secondary-color: #2867B2;
+            --background-color: #f4f4f8;
+            --text-color: #333;
+            --shadow-color: rgba(0, 115, 177, 0.25);
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        header {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px var(--shadow-color);
+        }
+        .hero {
+            width: 100%;
+            height: 450px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .hero h1 {
+            position: absolute;
+            z-index: 2;
+            color: white;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .mission, section {
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2em;
+            color: var(--text-color);
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px var(--shadow-color);
+            transition: transform 0.3s, box-shadow 0.3s; /* Transition for moving and shadow deepening */
+        }
+        .mission:hover, section:hover {
+            transform: translateY(-5px); /* Moves section slightly up */
+            box-shadow: 0 6px 10px var(--shadow-color); /* Slightly deeper shadow when hovered */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        h2 {
+            display: flex;
+            align-items: center;
+            font-size: 1.5em;
+        }
+        h2 i {
+            margin-right: 10px;
+        }
+        a, button {
+            transition: color 0.3s, background-color 0.3s, transform 0.3s;
+        }
+        a:hover, button:hover {
+            color: white;
+            background-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            h1, h2 {
+                font-size: 1.2em;
+            }
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animated {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>z/COBOL™ Version 2.1.0</h1>
+    </header>
+
+    <div class="hero animated">
+        <video autoplay loop muted playsinline style="pointer-events: none;">
+            <source src="hero-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Leading the Future of VSE</h1>
+    </div>
+
+    <div class="mission animated">
+        <p>Imagine what can be accomplished with a cutting-edge, unparalleled COBOL compiler that truly modernizes the mainframe.</p>
+        <p>Organizations need to do more than just acquire cutting-edge hardware—they must have apex tools that truly optimize their investment.</p>
+    </div>
+
+    <section id="data-management" class="animated">
+        <h2><i class="fas fa-database"></i>Data Management and Performance</h2>
+        <p>
+            z/COBOL™ is a modernized COBOL compiler optimized for the latest IBM z Series mainframe, designed to enhance platform performance on z/VSE and VSEn systems. It produces code that is 13 times faster than other VSE COBOL compilers, ensuring full compatibility with IBM COBOL VSE/ESA 1.1 and DOS/VS COBOL 1.3.1. Our compiler meets and exceeds the 1985 COBOL Standard, ISO/IEC 1989:2014(E), backed by robust support from a dedicated software company.
+            Extensions include support for all forms of VSE—DASD, tape, and VSAM files, advanced-function printing, and 64-bit virtual memory objects.
+        </p>
+    </section>
+
+    <section id="object-code" class="animated">
+        <h2><i class="fas fa-code"></i>Object Code Produced and Compatibility</h2>
+        <p>
+            The z Series 64-bit architecture of z/COBOL™ utilizes all available hardware instructions for extremely high performance. It generates completely reentrant, high-efficiency code with no SIIS code required and can receive control in 24-bit, 31-bit, or 64-bit modes, without needing LE for execution. Compatible with COBOL, PL/I, C, or Assembler across various bit modes. Supports CICS including 64-bit virtual memory objects and vectors.
+        </p>
+    </section>
+
+    <section id="compatibility" class="animated">
+        <h2><i class="fas fa-sync-alt"></i>Extended Compatibility Features</h2>
+        <p>
+            The upgraded compiler ensures seamless integration and backward compatibility with legacy systems. Extending support for older software helps maintain critical operations without disruptions, making it easier to integrate modern technologies. Backed by our powerful toolset for troubleshooting and optimizing code.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CSI International z/COBOL™. All rights reserved.</p>
+    </footer>
+</body>
+</html>
